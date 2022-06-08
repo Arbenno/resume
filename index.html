@@ -11,16 +11,19 @@
 </head>
 <body>
     <div class="container">
+        <div class="info">
         <img src="profileImage.jpg" alt="Это фотография профиля" class="avatar">
-            <div class="info">        
+            <div class="info-text">       
                 <h1>Константин Корчагин</h1>
                 
                 <p>Мне 21 год. Недавно <em>вошел в IT</em> и активно в ней развиваюсь. На данный момент знаю <strong>HTML/CSS</strong>, а так же нахожусь в процессе изучения <strong>JavaScript</strong></p>
+            </div> 
+        </div>    
 
                 <div class="card bg-green">
                     <h3>Мои хобби</h3>
 
-                    <ul>
+                    <ul class="list">
                         <li>Компьютерные игры</li>
                         <li>Программирование</li>
                         <li>F1</li>
@@ -33,18 +36,18 @@
                             | 
                             <a href="https://trovo.live/Arbenno" target="_blank">Trovo</a>
                     </div> 
-            </div>
+            
 
             <div class="card bg-red">
                 <h3>Опыт работы</h3>
-                    <table>
-                        <thead>
+                    <table class="table">
+                        <!-- <thead>
                             <tr>
                                 <th>Название</th>
                                 <th>Должность</th>
                                 <th>Год</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody>
                             <tr>
                                 <td>Город Мастеров</td>
@@ -60,25 +63,28 @@
 
                     </table>
             </div>
-
+        
+        <form action="/" class="form">
         <h5>Связаться со мной</h5>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
 
-        <div>
-            <label for="Email">Email</label>
-            <input type="text" id="Email" placeholder="Введите email">
-        </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" placeholder="Введите email">
+                </div>
+            </div>    
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="" cols="20" rows="5" placeholder='Введите сообщение...'></textarea>
-        </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea name="message" id="" cols="20" rows="5" placeholder='Введите сообщение...'></textarea>
+                </div>
 
-        <button type="submit">Отправить!</button>
+                <button type="submit" class="btn" class="form-input">Отправить!</button>
+        </form>
     </div>
 
 </body>
